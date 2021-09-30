@@ -13,7 +13,7 @@ int main() {
     while (total > 0){
         printf("How many sticks do you take? -");
         scanf("%d", &move);
-        while (move > possible){
+        while (move > possible || move < 1){
             printf("You can't take that much!\nYou can take %d sticks.\nHow many sticks do you take? -:", possible);
             scanf("%d", &move);
         }
